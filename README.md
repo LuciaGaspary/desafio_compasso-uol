@@ -15,3 +15,10 @@ Janeiro/2023 - entrega da solução final e premiação (data a definir com a eq
 Haverá uma premiação no valor de R$600,00 (seiscentos reais, pagos em espécie para o integrante da equipe indicado nesse formulário de inscrição) para a equipe vencedora, a quais serão julgadas em termos de inovação, uso de tecnologias, praticidade de uso, atendimento dos requisitos das regras de negócio.
 
 Será emitido certificado de participação (10horas) para todos os participantes do desafio.
+
+
+Contributors
+
+- Augusto Rickes
+- Lucia Gaspary
+- Jeferson Marchetto
