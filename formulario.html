@@ -7,29 +7,29 @@
     
     <title>Eventos Co.place - Pelotas Parqeu Tecnológico</title>
     <meta content="" name="description">
-  <meta content="" name="keywords">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,7 +42,6 @@
 
     <!-- MAIN -->
     <main>
-
         <!-- FORMULÁRIO -->
         <form class="container">
             <fieldset>
@@ -108,57 +107,35 @@
               <div class="mb-3">
                 <label  class=" fw-bold" for="date" class="form-label">Necessita período de montagem e desmonstagem do espaço? (Selecione 2 opções)</label>
 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="check1" id="check1">
-                    <label class="form-check-label" for="check1">Não, até 30 minutos antes e após o evento são suficientes para organização</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check2">
-                    <label class="form-check-label" for="check2">Sim, até 1 hora antes do início</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check3">
-                    <label class="form-check-label" for="check3">Sim, até 1 hora após o término</label>  
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check4">
-                    <label class="form-check-label" for="check4">Sim, 1 turno antes do início</label>   
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check5">
-                    <label class="form-check-label" for="check5">Sim, 1 turno após o término</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check6">
-                    <label class="form-check-label" for="check6">Outro</label>
-                    <!-- PRECISO COLOCAR UM CAMPO DE TEXTO AQUI -->
-                </div>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="montagem">
+                    <option selected>Selecione</option>
+                    <option>Não, até 30 minutos antes e após o evento são suficientes para organização</option>
+                    <option>Sim, até 1 hora antes do início</option>
+                    <option>Sim, 1 turno antes do início</option>
+                    <option>Outro (utilize o ultimo campo para informação complementar)</option>
+                </select>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="desmontagem">
+                    <option selected>Selecione</option>
+                    <option>Não, até 30 minutos antes e após o evento são suficientes para organização</option>
+                    <option>Sim, até 1 hora após o término</option>
+                    <option>Sim, 1 turno após o término</option>
+                    <option>Outro (utilize o ultimo campo para informação complementar)</option>
+                </select>
               </div>
+              <!--FIM PERIODO DE MONTAGEM E DESMONTAGEM -->
 
              <!-- SELEÇÃO DOS ESPAÇO -->
              <div class="mb-3">
                 <label class=" fw-bold">Indique o(s) espaço(s) de interesse para o seu evento</label>
 
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">Auditório</label> 
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">Sala Multiuso I</label>
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                    <label class="form-check-label" for="flexRadioDefault3">Sala Multiuso II</label>
-                  </div>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="espaco">
+                    <option selected>Selecione</option>
+                    <option>Auditório</option>
+                    <option>Sala Multiuso I</option>
+                    <option>Sala Multiuso II</option>
+                </select>
              </div>       
+             <!--FIM SELEÇÃO DOS ESPAÇO -->
 
              <!-- FORMATAÇAO DOS ESPAÇO -->
              <div class="mb-3 fw-bold">
@@ -167,7 +144,7 @@
                     
                     <img src="img/disposicao.JPG">
                     
-                    <select id="disabledSelect" class="form-select">
+                    <select id="formatacao" class="form-select">
                       <option>Selecionar</option>
                       <option>Somente cadeiras em formato auditório</option>
                       <option>Sala de aula (cadeiras e mesas coletivas ou cadeiras com prancheta, conforme o espaço)</option>
@@ -178,89 +155,80 @@
                     </select>
                   </div>
              </div>
+             <!--FIM FORMATAÇAO DOS ESPAÇO -->
 
              <!-- ESPAÇO COMPLEMENTAR -->
              <div class="mb-3">
                 <label class=" fw-bold">Tem interesse em algum espaço COMPLEMENTAR para realizar seu evento?</label>
 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="esp-comp1">
-                    <label class="form-check-label" for="esp-comp1">Cafeteria (a partir das 18h)</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="esp-comp2">
-                    <label class="form-check-label" for="esp-comp2">Hall interno</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="esp-comp3">
-                    <label class="form-check-label" for="esp-comp3">Arena da Inovação</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="esp-comp4">
-                    <label class="form-check-label" for="esp-comp4">Pátio externo</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="esp-comp5">
-                    <label class="form-check-label" for="esp-comp5">Não tenho interesse em espaço complementar</label>
-                </div>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="complementar">
+                    <option selected>Selecione</option>
+                    <option>Cafeteria (a partir das 18h)</option>
+                    <option>Hall interno</option>
+                    <option>Arena da Inovação</option>
+                    <option>Pátio externo</option>
+                    <option>Não tenho interesse em espaço complementar</option>
+                </select>
              </div>
+             <!--FIM ESPAÇO COMPLEMENTAR -->
 
              <!-- EQUIPAMENTOS -->
              <div class="mb-3">
                 <label class=" fw-bold" for="equipamentos">Assinale os equipamentos disponibilizados pela Co.place, necessários ao evento
                     *Conforme disponibilidade, de acordo com o tipo de locação e agenda prevista</label>
                 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="equipamento1">
-                    <label class="form-check-label" for="equipamento1">Datashow</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="equipamento2">
-                    <label class="form-check-label" for="equipamento2"> Caixa de som + microfone com fio</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="equipamento3">
-                    <label class="form-check-label" for="equipamento3">Caixa de som de mesa (salas multiuso)</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="equipamento4">
-                    <label class="form-check-label" for="equipamento4"> Flipchart</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="equipamento5">
-                    <label class="form-check-label" for="equipamento5">Não será utilizado nenhum dos equipamentos listados</label>
-                </div>   
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="datashow">
+                    <option selected>Selecione</option>
+                    <option>Datashow</option>
+                    <option>Não é necessário</option>
+                </select>
+
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="audioesom">
+                    <option selected>Selecione</option>
+                    <option> Caixa de som + microfone com fio</option>
+                    <option>Não é necessário</option>
+                </select>
+
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="audioesomdois">
+                    <option selected>Selecione</option>
+                    <option>Caixa de som de mesa (salas multiuso)</option>
+                    <option>Não é necessário</option>
+                </select>
+
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="flipchart">
+                    <option selected>Selecione</option>
+                    <option>Flipchart</option>
+                    <option>Não é necessário</option>
+                </select>
              </div>
+             <!--FIM EQUIPAMENTOS -->
 
              <!-- EQUIPAMENTOS EXTRAS -->
              <div class="mb-3">
                 <label  class=" fw-bold" for="equipamento-extra">Assinale se necessita instalação de outros equipamentos e contratação de serviços de terceiros</label>
                 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="equipamento-extra1">
-                    <label class="form-check-label" for="equipamento-extra1">Sonorização</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="equipamento-extra2">
-                    <label class="form-check-label" for="equipamento-extra2">Iluminação</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="equipamento-extra3">
-                    <label class="form-check-label" for="equipamento-extra3">Ambientação de palco (auditório)</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="equipamento-extra4">
-                    <label class="form-check-label" for="equipamento-extra4">Ambientação do espaço</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="equipamento-extra5">
-                    <label class="form-check-label" for="equipamento-extra5">Não é necessário</label>
-                </div>   
+                <select class="form-select form-select-sm " aria-label=".form-select-sm example" id="sonorizacao">
+                    <option selected>Selecione</option>
+                    <option>Sonorização</option>
+                    <option>Não é necessário</option>
+                </select>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="iluminacao">
+                    <option selected>Selecione</option>
+                    <option>Iluminação</option>
+                    <option>Não é necessário</option>
+                </select>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="palco">
+                    <option selected>Selecione</option>
+                    <option>Ambientação de palco (auditório)</option>
+                    <option>Não é necessário</option>
+                </select>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="espaco">
+                    <option selected>Selecione</option>
+                    <option>Ambientação do espaço</option>
+                    <option>Não é necessário</option>
+                </select>
              </div>
+             <!--FIM EQUIPAMENTOS EXTRAS -->
 
              <!--LISTA DE FORNECEDORES -->
              <div class="mb-3">
@@ -270,44 +238,30 @@
                     <label for="floatingTextarea2">Digite sua mensagem</label>
                 </div>
              </div>
+             <!--FIM LISTA DE FORNECEDORES -->
 
              <!--SERVIÇOS CAFETERIA -->
              <div class="mb-3">
                 <label class=" fw-bold">Serviços de Coffee Break produzidos pela Cafeteria da Co.place*</label>
 
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="coffe" id="coffe1">
-                    <label class="form-check-label" for="coffe1">Kit café (térmica de café 1,8litros + descartáveis + balas) R$25,00</label> 
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="coffe" id="coffe2">
-                    <label class="form-check-label" for="coffe2">Coffee Break padrão (café, água saborizada, salgados, canapés, sanduíches, bolo e frutas) - opções são enviadas na proposta</label>
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="coffe" id="coffe3">
-                    <label class="form-check-label" for="coffe3">Contratação de serviço de alimentação externo (cliente responsável pela contratação externa) (NÃO PERMITIDO DURANTE A PANDEMIA)</label>
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="coffe" id="coffe4">
-                    <label class="form-check-label" for="coffe4">Não será utilizado nenhum tipo de coffee break</label>
-                  </div>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="coffeebreak">
+                    <option selected>Selecione</option>
+                    <option>Kit café (térmica de café 1,8litros + descartáveis + balas) R$25,00</option>
+                    <option>Coffee Break padrão (café, água saborizada, salgados, canapés, sanduíches, bolo e frutas) - opções são enviadas na proposta</option>
+                    <option>Contratação de serviço de alimentação externo (cliente responsável pela contratação externa) (NÃO PERMITIDO DURANTE A PANDEMIA)</option>
+                    <option>Não será utilizado nenhum tipo de coffee break</option>
+                  </select>
              </div> 
 
              <!--ACESSO AOS PARTICIPANTES -->
              <div class="mb-3">
                 <label class=" fw-bold" for="equipamento-extra">Acesso ao evento para os participantes*</label>
                 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="acesso1">
-                    <label class="form-check-label" for="acesso1">Gratuito</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="acesso2">
-                    <label class="form-check-label" for="acesso2">Pago</label>
-                </div>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="acesso">
+                    <option selected>Selecione</option>
+                    <option>Gratuito</option>
+                    <option>Pago</option>
+                </select>
              </div>
 
              <!--CAMPO PARA DUVIDAS -->
@@ -325,7 +279,6 @@
             </fieldset>
           </form>
           <!-- FIM FIRMULÁRIO -->
-
     </main>
     <!-- FIM MAIN -->
 
